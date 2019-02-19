@@ -1,0 +1,31 @@
+{
+  "name": "api-automation-test-js",
+  "version": "1.0.0",
+  "description": "API automation test framework implemented by Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/spec/*/*.js --reporter mochawesome --reporter-options jsonReport=true,shortScrFileNames=true --timeout=30000",
+    "parallel": "mocha-parallel-tests test/spec/*/*.js --reporter mochawesome --reporter-options jsonReport=true,shortScrFileNames=true,multiReport=true --retries 3 --timeout=30000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanzhang123456/API-Automation-Test-Js.git"
+  },
+  "author": "Dylanz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylanzhang123456/API-Automation-Test-Js/issues"
+  },
+  "homepage": "https://github.com/dylanzhang123456/API-Automation-Test-Js#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "log4js": "^4.0.2",
+    "mocha": "^5.2.0",
+    "mocha-parallel-tests": "^2.0.6-alpha.3",
+    "mochawesome": "^3.1.1",
+    "moment": "^2.24.0",
+    "node-xlsx": "^0.14.1",
+    "randomatic": "^3.1.1",
+    "supertest": "^3.4.2"
+  }
+}
