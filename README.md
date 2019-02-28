@@ -39,8 +39,7 @@ else you should require in your test suites by yourself).
 /**Created by Dylan*/
 describe('Template', async function () {
     before(async function () {
-        await require(`${process.cwd()}/init`);
-        await mochaHookUtil.init(this);
+        (await require(`${process.cwd()}/init`))(this);
         await I.login();
     });
     beforeEach(async function () {
