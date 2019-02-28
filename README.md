@@ -65,14 +65,6 @@ describe('Template', async function () {
 * __If the I object cannot satisfy the developer, you can add a new one in__: commands/* and Commands.js.
 * __If the http methods cannot satisfy the developer, you can add a new one in__: httpMethod/*/ and Http.js.
 
-
-# How to create a case which need to get without login
-```bash
-    it("[Negative] Get XXX api without login BO should pass", async function () {
-        let response = await http.getWithoutLoginBO(path.XXX);
-        assert.equal(response.statusCode, 204);
-    });
-```
 # How to mark happy/sad cases
 * __Add a tag in every cases__: Use [Positive] for happy pass cases and [Negative] for sad cases.
 
