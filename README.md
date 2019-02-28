@@ -66,7 +66,7 @@ describe('Template', async function () {
 * __If the http methods cannot satisfy the developer, you can add a new one in__: httpMethod/*/ and Http.js.
 
 
-# How to create a case which need to get without login BO
+# How to create a case which need to get without login
 ```bash
     it("[Negative] Get XXX api without login BO should pass", async function () {
         let response = await http.getWithoutLoginBO(path.XXX);
@@ -76,15 +76,6 @@ describe('Template', async function () {
 # How to mark happy/sad cases
 * __Add a tag in every cases__: Use [Positive] for happy pass cases and [Negative] for sad cases.
 
-# How to run the test
-* __Add decryption key to defaultConfig.json,like__:
-```bash
-    {
-      "env": "cm",
-      "decryptionKey": "xxxx"
-    }
-```
-* __The decryptionKey can be found in jenkins job__: TBD
 * __Use the below command in the project__:
 ```bash
     $ npm test
